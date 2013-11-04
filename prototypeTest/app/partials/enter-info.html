@@ -1,0 +1,10 @@
+<h2>Enter weight and birth date</h2>
+<input type="text" value="weight" ng-model="getWeight">
+<input type="date" ng-model="getDate">
+<button type="submit" ng-click="storeData()">Go</button>
+
+<div ng-show="showPlanets">
+	<div ng-repeat="data in data">
+		<p><a href="#/planets/{{data.id}}">{{data.planet}}</a></p>
+	</div>
+</div>

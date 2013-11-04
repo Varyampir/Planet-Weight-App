@@ -1,0 +1,19 @@
+<h1>{{data[planetId].planet}}</h1>
+<ul>
+  <li><strong>Length of Year:</strong> {{data[planetId].year | number}} days</li>
+  <li><strong>Distance from Sun:</strong> {{data[planetId].distance | number}} kilometers</li>
+  <li><strong>Rotation period:</strong> {{data[planetId].rotation | number}} hours</li>
+  <li><strong>Revolution period:</strong> {{data[planetId].revolution | number}} days</li>
+  <li><strong>Diameter:</strong> {{data[planetId].diameter | number}} kilometers</li>
+  <li><strong>Number of Moons:</strong> {{data[planetId].moons | number}}</li>
+  <li><strong>Average Temperature:</strong> {{data[planetId].meanTemp | number}} ˚C</li>
+</ul>
+<ul>
+  <li><strong>Your Weight:</strong> {{weightCalc(data[planetId].weight) | number}} lbs</li>
+  <li><strong>Your age in days:</strong> {{ageCalc(data[planetId].day)}} Days old</li>
+  <li><strong>Your age in years:</strong> {{ageCalc(data[planetId].year)}} Years old</li>
+</ul>
+<div>
+  <img ng-src="images/{{getImg(data[planetId].planet)}}.gif">
+</div>
+<a href="#/">Back</a>
