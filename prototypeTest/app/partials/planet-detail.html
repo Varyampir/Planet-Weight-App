@@ -10,8 +10,8 @@
 </ul>
 <ul>
   <li><strong>Your Weight:</strong> {{weightCalc(data[planetId].weight) | number}} lbs</li>
-  <li><strong>Your age in days:</strong> {{ageCalc(data[planetId].day)}} Days old</li>
-  <li><strong>Your age in years:</strong> {{ageCalc(data[planetId].year)}} Years old</li>
+  <li><strong>Your age in days:</strong> {{ageCalc(data[planetId].day) | number}} Days old</li>
+  <li><strong>Your age in years:</strong> {{ageCalc(data[planetId].year) | number}} Years old</li>
 </ul>
 <div>
   <img ng-src="images/{{getImg(data[planetId].planet)}}.gif">
