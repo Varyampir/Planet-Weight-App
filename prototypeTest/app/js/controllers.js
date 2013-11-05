@@ -44,13 +44,12 @@ function planetData($scope, $routeParams) {
     }
 
     // Function to return 0 if result is <1
-	function int_zero(x)
-	{
-		if ( x < 1 )
-			return 0 ;
-		else
-			return parseInt( x ,10 );
-	}
+	function int_zero(x) {
+        if ( x < 1 )
+            return 0 ;
+        else
+            return parseInt( x ,10 );
+    }
 }
 
 
