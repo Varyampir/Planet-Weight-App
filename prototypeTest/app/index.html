@@ -1,50 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" ng-app="planetApp">
-  <head>
-    <meta charset="utf-8">
-    <title>Planet App</title>
-    
-    <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.css"/>
-    <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap-theme.min.css"/>
-     <link rel="stylesheet" href="css/app.css"/>
-     <link rel="stylesheet" href="http://getbootstrap.com/examples/theme/theme.css"/>
-  </head>
-  <body ng-controller="initialize">
-      <div class="wrap">
-         <div class="navbar navbar-inverse navbar-fixed-top">
+<head>
+<meta charset="utf-8">
+<title>Planet App</title>
 
-             <div class="container">
-                  <div class="navbar-header"><a class="navbar-brand" href="#" align="center">
+<!-- For mobile-first bootstrap, disable zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-   whats your weight on other planets?
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/app.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
 
-</a>
-                   W
-                  </div>
-              </div>
+</head>
+<body ng-controller="initialize">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+    	<div class="navbar-header">
+        	<a class="navbar-brand" href="#">Your weight &#38; age on other planets</a>
         </div>
-          <div class="container">
-            
-  
-                  <div class="row">
-                      <div class="col-xs-6 col-md-4 col-lg-12" align="center">
-                              <div ng-view></div>
-                      </div>
-                  </div>
-              </div>
-      </div>       
+	</div>
+</div> 
+<br>
+<br>
+<div class="container">
+	<div ng-view></div>
+</div>
              
         <!-- In production use:
         <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
         -->
 
-         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-         <script src=" http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
-         <script src=" http://getbootstrap.com/docs-assets/js/holder.js"></script>
-        <script src="lib/angular/angular.js"></script>
-        <script src="lib/angular/angular-route.js"></script>
-        <script src="js/app.js"></script>
-        <script src="js/controllers.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular/angular-route.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers.js"></script>
 
-  </body>
+</body>
 </html>
