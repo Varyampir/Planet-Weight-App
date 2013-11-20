@@ -10,11 +10,5 @@
 		<input type="date" class="form-control" ng-model="getDate">
 	</div>
 
-	<button type="submit" class="btn btn-warning btn-lg" ng-click="storeData()">Go</button>
+	<a href="#/show-planets" type="submit" class="btn btn-warning btn-lg" ng-click="storeData()">Go</button>
 </form>
-
-<div ng-show="showPlanets">
-	<div ng-repeat="data in data">
-		<p><a href="#/planets/{{data.id}}">{{data.planet}}</a></p>
-	</div>
-</div>

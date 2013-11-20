@@ -1,0 +1,4 @@
+<a href="#/enter-info" class="btn btn-lg btn-primary top">Restart</a>
+<ul class="planetList">
+	<li ng-repeat="data in data"><a href="#/planets/{{data.id}}"><img ng-src="images/{{getImg(data.planet)}}icon.png">{{data.planet}}</a></li>
+</ul>

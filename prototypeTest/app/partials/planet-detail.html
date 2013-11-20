@@ -1,3 +1,5 @@
+<a href="#/show-planets"><button type="button" class="btn btn-lg btn-primary top">Planets</button></a>
+<a href="#/enter-info"><button type="button" class="btn btn-lg btn-primary top">Restart</button></a>
 <h1>{{data[planetId].planet}}</h1>
 <ul class="list-unstyled">
   <li><strong>Length of Year:</strong> {{data[planetId].year | number}} days</li>
@@ -16,4 +18,3 @@
 <div>
   <img ng-src="images/{{getImg(data[planetId].planet)}}.jpg" class="img-responsive img-thumbnail" alt="Responsive image">
 </div><br>
-<a href="#/"><button type="button" class="btn btn-warning btn-lg">Back</button></a>
