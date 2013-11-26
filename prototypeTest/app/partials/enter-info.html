@@ -1,14 +1,14 @@
-<h3>Enter your information</h3>
+<h3>Enter your info and get access to our interstellar travel hub!</h3>
 
 <form role="form">
 	<div class="form-group">
-		<label>Weight (lbs):</label>
-		<input type="text" class="form-control" value="weight" ng-model="getWeight">
+		<label>Your Weight (lbs):</label>
+		<input type="number" class="form-control" value="weight" ng-model="getWeight">
 	</div>
 	<div class="form-group">
-		<label>Birth date:</label>	
+		<label>Your Birth Date:</label>	
 		<input type="date" class="form-control" ng-model="getDate">
 	</div>
 
-	<a href="#/show-planets" type="submit" class="btn btn-warning btn-lg" ng-click="storeData()">Go</button>
+	<a href="#/show-planets" type="submit" class="btn btn-warning btn-lg" ng-click="storeData()">Enter Info</a>
 </form>

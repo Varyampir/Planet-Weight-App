@@ -1,7 +1,16 @@
 <a href="#/show-planets"><button type="button" class="btn btn-lg btn-primary top">Planets</button></a>
 <a href="#/enter-info"><button type="button" class="btn btn-lg btn-primary top">Restart</button></a>
+<div>
+  <img ng-src="images/{{getImg(data[planetId].planet)}}.jpg" class="img-responsive img-thumbnail" alt="Responsive image">
+</div>
 <h1>{{data[planetId].planet}}</h1>
-<ul class="list-unstyled">
+<ul class="planetdet">
+  <li><strong>Your Weight:</strong> {{weightCalc(data[planetId].weight) | number}} lbs</li>
+  <li><strong>Your age in days:</strong> {{ageCalc(data[planetId].day) | number}} Days old</li>
+  <li><strong>Your age in years:</strong> {{ageCalc(data[planetId].year) | number}} Years old</li>
+</ul>
+<hr />
+<ul class="planetdet">
   <li><strong>Length of Year:</strong> {{data[planetId].year | number}} days</li>
   <li><strong>Distance from Sun:</strong> {{data[planetId].distance | number}} kilometers</li>
   <li><strong>Rotation period:</strong> {{data[planetId].rotation | number}} hours</li>
@@ -10,11 +19,4 @@
   <li><strong>Number of Moons:</strong> {{data[planetId].moons | number}}</li>
   <li><strong>Average Temperature:</strong> {{data[planetId].meanTemp | number}} ˚C</li>
 </ul>
-<ul>
-  <li><strong>Your Weight:</strong> {{weightCalc(data[planetId].weight) | number}} lbs</li>
-  <li><strong>Your age in days:</strong> {{ageCalc(data[planetId].day) | number}} Days old</li>
-  <li><strong>Your age in years:</strong> {{ageCalc(data[planetId].year) | number}} Years old</li>
-</ul>
-<div>
-  <img ng-src="images/{{getImg(data[planetId].planet)}}.jpg" class="img-responsive img-thumbnail" alt="Responsive image">
-</div><br>
+<br>
