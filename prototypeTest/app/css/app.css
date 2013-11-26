@@ -1,39 +1,6 @@
 /* app css stylesheet */
-body {
-	
-}
 
-.top{
-	margin-top:25px;
-}
-.planetList{
-	list-style: none;
-}
-.planetList li{
-	width:45%;
-	display:inline-block;
-	padding-right:5%;
-	padding-bottom:2em;
-}
-.planetList li img{
-	width:100%;
-}
-
-/*.content {
-	margin-top: 1em;
-}*/
-
-.navbar-brand {
-	width: 100% !important;
-	text-align: center;
-}
-
-.navbar-header img {
-	display: block;
-	width: 300px;
-	margin: 0 auto;
-}
-
+/************* BUTTONS *************/
 .btn-lg {
 	text-align: center;
 }
@@ -44,7 +11,7 @@ body {
 	background-color: 		#D9E021;
 	font-size: 				2em;
 	color: 					#000000;
-	padding: 				0 2em;
+	padding: 				0 0.5em;
 	border: 				none;
 	-webkit-transition:  	0.2s ease-in-out;
 	-moz-transition: 		0.2s ease-in-out;;
@@ -58,75 +25,48 @@ body {
 	color: 					#D9E021;
 }
 
-.btn-warning {
-	margin: 				2em 0;
+#gobtn, #restartbtn, #enterinfobtn {
+	margin: 				1em 0;
 }
 
-.btn-lg {
-	margin-bottom: 			2em;
+#topbtns {
+
 }
 
-.form-group {
-	color: 					#FFFFFF;
-	text-align: 			left;
-	font-weight: 			thin;
-}
-
-.form-group input {
-	height: 				40px;
-}
-
-h1, h2, h3, h4, h5, h6, p, ul, ol, dl, li, a {
-	font-family: 			'Roboto', sans-serif;
-	color: 					#FFFFFF;
-	font-weight: 			400;
-}
-
-h3 {
-	margin: 				2em 0;
-}
-
-.content {
-	text-align: 			center;
-	max-width: 				600px;
-	margin: 				0 auto;
-	-webkit-border-radius: 	10px;
-	-moz-border-radius: 	10px;
-	border-radius: 			10px;
-	background-color: 		#4D4D4D;
-	min-height:				40em;
-	height: 				100%;
-	padding: 				2em;
+#plntrstrtbtn, #planetsbtn {
+	font-size: 				1.5em;
+	margin: 				1em 0.5em 1em 0.5em;
 }
 
 
-figure.logoimg {
-	padding: 				2em 1em;
-	margin-bottom: 			4em;
-	background-color: 		#000000;
-	-moz-box-shadow:    	inset 0 0 3px rgba(0, 0, 0, 0.2);
-   	-webkit-box-shadow: 	inset 0 0 3px rgba(0, 0, 0, 0.2);
-   	box-shadow:         	inset 0 0 3px rgba(0, 0, 0, 0.2);
+/************* PLANET LIST *************/
+.planetList{
+	list-style: none;
 }
 
-figure.logoimg img {
-	width: 					100%;
-	max-width: 				600px;
-	box-shadow: 			inset 5px 5px 2px rgba(0, 0, 0, 0.4);		
+.planetList li{
+	width:  				45%;
+	display: 				inline-block;
+	padding-left: 			2.5%;
+	padding-right: 			2.5%;
+	padding-bottom: 		2em;
+}
+
+.planetList li img{
+	width:100%;
 }
 
 ul.planetList {
 	padding: 				0;
-	margin: 				0 auto;
+	margin: 				2em auto;
 }
 
 ul.planetList li a {
-	text-align: 			center; /* THIS NEEDS FIXING, it doesn't work */
+	text-align: 			center;
 }
 
 ul.planetList a img {
-	padding: 				0;
-	margin: 				1em;
+	padding-bottom: 		1em;
 	-webkit-transition:  	0.2s ease-in-out;
 	-moz-transition: 		0.2s ease-in-out;;
 	-o-transition: 			0.2s ease-in-out;
@@ -155,3 +95,72 @@ ul.planetdet {
 	text-align: 			left;
 	padding: 				0;
 }
+
+/************* GENERAL **************/
+
+.top{
+	margin-top:25px;
+}
+
+
+.navbar-brand {
+	width: 100% !important;
+	text-align: center;
+}
+
+.navbar-header img {
+	display: block;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.form-group {
+	color: 					#FFFFFF;
+	text-align: 			left;
+	font-weight: 			thin;
+}
+
+.form-group input {
+	height: 				40px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, li, a {
+	font-family: 			'Roboto', sans-serif;
+	color: 					#FFFFFF;
+	font-weight: 			400;
+}
+
+h1 {
+	color: 					#D9E021;
+}
+
+h3 {
+	margin: 				2em 0;
+}
+
+.content {
+	text-align: 			center;
+	max-width: 				600px;
+	margin: 				0 auto;
+	-webkit-border-radius: 	10px;
+	-moz-border-radius: 	10px;
+	border-radius: 			10px;
+	background-color: 		#4D4D4D;
+	min-height:				40em;
+	height: 				100%;
+	padding: 				2em;
+}
+
+/************* IMAGES *************/
+
+figure.logoimg {
+	padding: 				2em 1em;
+	margin-bottom: 			4em;
+	background-color: 		#4D4D4D;
+}
+
+figure.logoimg img {
+	width: 					100%;
+	max-width: 				600px;
+}
+
