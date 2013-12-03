@@ -1,5 +1,17 @@
 /* app css stylesheet */
 
+/************* BACKGROUND *************/
+#home {
+	background: url(../images/star-background.jpg) 50% 0 repeat fixed;
+}
+
+/************* NAVBAR *************/
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+
+
 /************* BUTTONS *************/
 .btn-lg {
 	text-align: center;
@@ -10,7 +22,8 @@
 	height: 				40px;
 	background-color: 		#D9E021;
 	font-size: 				2em;
-	color: 					#000000;
+	color: 					#333333;
+	border:					solid 1px #333333;
 	padding: 				0 0.5em;
 	border: 				none;
 	-webkit-transition:  	0.2s ease-in-out;
@@ -21,16 +34,13 @@
 
 .btn-primary:hover,
 .btn-warning:hover {
-	background-color: 		#000000;
+	background-color: 		#333333;
 	color: 					#D9E021;
+	border: 				solid 1px #D9E021;
 }
 
 #gobtn, #restartbtn, #enterinfobtn {
 	margin: 				1em 0;
-}
-
-#topbtns {
-
 }
 
 #plntrstrtbtn, #planetsbtn {
@@ -145,10 +155,14 @@ h3 {
 	-webkit-border-radius: 	10px;
 	-moz-border-radius: 	10px;
 	border-radius: 			10px;
-	background-color: 		#4D4D4D;
 	min-height:				40em;
 	height: 				100%;
 	padding: 				2em;
+}
+
+#footer {
+	font-size: 10px;
+	text-align: center;
 }
 
 /************* IMAGES *************/
