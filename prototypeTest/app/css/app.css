@@ -177,4 +177,7 @@ figure.logoimg img {
 	width: 					100%;
 	max-width: 				600px;
 }
+.img-large{
+	margin:0 auto;
+}
 
