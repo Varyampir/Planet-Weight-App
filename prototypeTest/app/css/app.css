@@ -11,6 +11,10 @@
 	border-radius: 0;
 }
 
+.navbar>.container .navbar-brand {
+	margin-left: 0;	
+}
+
 
 /************* BUTTONS *************/
 .btn-lg {
