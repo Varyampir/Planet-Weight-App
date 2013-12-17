@@ -4,6 +4,9 @@
 #home {
 	background: url(../images/star-background.jpg) 50% 0 repeat fixed;
 }
+body{
+	background-color: #000;
+}
 
 /************* NAVBAR *************/
 .navbar {
@@ -108,6 +111,18 @@ ul.planetdet {
 	list-style: 			none;
 	text-align: 			left;
 	padding: 				0;
+}
+ul.mainFacts{
+	margin-top:1.5em;
+}
+ul.mainFacts li{
+	text-align:				center;
+	font-size:				2.5em;
+	margin-bottom:			.5em;
+}
+ul.mainFacts li strong{
+	display:				block;
+	font-size:				.5em;
 }
 
 /************* GENERAL **************/
