@@ -199,6 +199,7 @@ figure.logoimg img {
 .img-large{
 	margin: 				0 auto;
 	max-width: 				350px;
+	width:					100%;
 }
 
 /************* FB BTN *************/
