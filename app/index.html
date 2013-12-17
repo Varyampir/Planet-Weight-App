@@ -20,6 +20,16 @@
 
 </head>
 <body ng-controller="initialize">
+	<div id="fb-root"></div><!--FACEBOOK LIKE BUTTONS-->
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=211616312352066";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+
 <div class="navbar navbar-inverse" role="navigation">
 	<div class="container">
     	<div class="navbar-header">
@@ -36,9 +46,10 @@
 
 <div id="footer">
     <div class="container">
-   		<p>Brought to you by J. Hafen, T. Goates, V. Jones &amp; A. Southwick</p>
+   		<p>Brought to you by J. Hafen, T. Goates, &amp; V. Jones</p>
     </div>
-</div> 
+	<div class="fb-like" data-href="http://dgm3790.joehafen.com/groupFinal/#/welcome" data-width="200" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+	</div> 
 
 	</article>
 </section>            
